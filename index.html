@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Scene</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <a-scene>
+        <a-sky color="#b0bec5"></a-sky>
+        <a-plane rotation="-90 0 0" width="30" height="30" color="#9e9e9e"></a-plane>
+        <a-light type="ambient" color="#ffffff"></a-light>
+
+        <!-- Buildings -->
+        <a-box position="0 1 -5" depth="1" height="2" width="1" color="#455a64"></a-box>
+        <a-box position="1 0.5 -3" depth="1" height="1" width="1" color="#607d8b"></a-box>
+        <a-box position="-1 1.5 -4" depth="1" height="3" width="1" color="#78909c"></a-box>
+
+        <!-- Car -->
+        <a-box position="2 0.5 -6" depth="1" height="0.5" width="1.5" color="#FF5733"></a-box>
+        <a-cylinder position="2.4 0.25 -6" radius="0.2" height="0.2" rotation="90 0 0" color="#000"></a-cylinder>
+        <a-cylinder position="1.6 0.25 -6" radius="0.2" height="0.2" rotation="90 0 0" color="#000"></a-cylinder>
+
+        <a-camera position="0 1.6 0"></a-camera>
+    </a-scene>
+</body>
+</html>
+
